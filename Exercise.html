@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitrogen and Its Behaviours</title>
+  <link rel="shortcut icon" href="./image/Logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  
+  
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="./image/Logo.jpg" alt="Logo" width="90">
+      </div>
+    
+    <div class="title-box">
+      <h3>Grade-11  CHEMISTRY ,CHAPTER-6 <br>  Nitrogen and its Behaviours</h3>
+    
+    </div>
+  </div>
+</header>
+<style>
+    body {
+      font-family: "Myanmar Text", sans-serif;
+      line-height: 1.6;
+      background-color: #f0f8ff;
+      margin: 40px;
+    }
+
+    h1 {
+      color: #2a7a3b;
+    }
+
+    .question {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .question p {
+      margin-bottom: 8px;
+    }
+
+    .question label {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2a7a3b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1a4d2e;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="home.html">ပင်မစာမျက်နှာ</a></li>
+    <li><a href="Objective.html">ရည်ရွယ်ချက်</a></li>
+    <li><a href="lesson.html">သင်ခန်းစာ</a></li>
+    <li><a href="Exercise.html">လေ့ကျင့်ခန်း</a></li>
+    <li><a href="member.html">အဖွဲ့ဝင်</a></li>
+    <li><a href="Reference.html">ကိုးကားစာရင်း</a></li>
+    <li><a href="Thankspeak.html">ကျေးဇူးတင်လွှာ</a></li>
+    <li><a href="contact.html">ဆက်သွယ်ရန်</a></li>
+    <li><a href="design.html">ဒီဇိုင်းအစီအစဉ်</a></li>
+  </ul>
+  </nav>
+  
+   </div>
+</div>
+
+<h1>အမှန် / အမှား လေ့ကျင့်ခန်း</h1>
+  <h2>Grade-11 – CHEMISTRY – CHAPTER-6  – Nitrogen and its Behaviours</h2>
+
+  <form id="quizForm">
+
+    <div class="question">
+      <p>1.Metals are good conductors of head and electricity. </p>
+      <label><input type="radio" name="q1" value="false"> အမှန်</label>
+      <label><input type="radio" name="q1" value="true"> အမှား</label>
+    </div>
+
+    <div class="question">
+      <p>2.Non-metals are located on the left-side of the periodic Table.</p>
+      <label><input type="radio" name="q2" value="true"> အမှန်</label>
+      <label><input type="radio" name="q2" value="false"> အမှား</label>
+    </div>
+
+    <div class="question">
+      <p>3.Nitrogen is present to the extent of about 21 percentage by volume of the air.</p>
+      <label><input type="radio" name="q3" value="true"> အမှန်</label>
+      <label><input type="radio" name="q3" value="false"> အမှား</label>
+    </div>
+
+    <div class="question">
+      <p>4.Nitrogen gas is relatively inactive and does not support combustion.</p>
+      <label><input type="radio" name="q4" value="false"> အမှန်</label>
+      <label><input type="radio" name="q4" value="true"> အမှား</label>
+    </div>
+
+    <div class="question">
+      <p>5.Ammonia gas is collected by the upward displacement of air.</p>
+      <label><input type="radio" name="q5" value="true"> အမှန်</label>
+      <label><input type="radio" name="q5" value="false"> အမှား</label>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">ရမှတ်စစ်ရန်</button>
+
+    <div id="result"></div>
+
+  </form>
+
+  <script>
+    function checkAnswers() {
+      const answers = {
+        q1: "false",  // ✅ 
+        q2: "false",   // ❌ right-side
+        q3: "false",   // ❌ 78%
+        q4: "false",   // ✅ 
+        q5: "false"    // ❌ 
+      };
+
+      let score = 0;
+
+      for (let i = 1; i <= 5; i++) {
+        const radios = document.getElementsByName("q" + i);
+        for (let radio of radios) {
+          if (radio.checked && radio.value === answers["q" + i]) {
+            score++;
+          }
+        }
+      }
+
+      document.getElementById("result").innerText =
+        "သင်ရရှိသော ရမှတ် = " + score + " / 5";
+    }
+  </script>
+<footer> 
+<marquee behavior="" direction=""> တနင်္သာရီတိုင်းဒေသကြီး၊ တိုင်းပညာရေးမှူးရုံးမှ ကြီးမှူးကျင်းပသော Advanced Computer Training Course သင်တန်း အဖွဲ့(၂)၏ Grade-11, CHEMISTRY,CHAPTER-6 Project</marquee>
+</footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+.header-container{
+  text-align: center;
+  padding: 0px;
+  color: navy;
+}
+
+.logo{
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.title-box{
+  margin-top: 1px;
+}
+  
+
+
+nav {
+  background-color: #003366; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff; 
+  font-weight: 500;
+  padding: 18px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+nav ul li a:hover {
+  background-color: #0059b3; 
+  
+}
+
+.hero-section{
+  background-image: url(./image/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+ 
+}
+ 
+footer{
+  background-color:blue;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  border-top: 1px;
+  margin-top:10px ;
+  
+}
+.objectives-container{
+  margin: 20px;
+  padding: 15px;
+}
+.objectives-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: navy;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3{
+  margin-top: 5px;
+}
+body{
+  background-color: #70b1f3;
+}
